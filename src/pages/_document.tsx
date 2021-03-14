@@ -9,7 +9,15 @@ class MyDocument extends Document {
 	render() {
 		return (
 			<Html>
-				<Head />
+				<Head>
+					<link
+						rel="preload"
+						href="/fonts/KronaOne-Regular.ttf"
+						as="font"
+						type="font/ttf"
+						crossOrigin="anonymous"
+					/>
+				</Head>
 				<body>
 					<Main />
 					<NextScript />

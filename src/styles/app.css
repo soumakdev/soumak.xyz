@@ -1,3 +1,31 @@
+@font-face {
+	font-family: "KronaOne";
+	font-weight: 400;
+	src: url("/fonts/KronaOne-Regular.ttf");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	@apply font-body bg-black text-white;
+}
+
+.home {
+	width: 85vw;
+	margin: auto;
+}
+
+.hero-text {
+	font-size: 50px;
+	line-height: 1.2;
+	max-width: 1024px;
+}
+
+@screen lg {
+	.hero-text {
+		font-size: 75px;
+		line-height: 1.2;
+	}
+}
